@@ -33,7 +33,8 @@ function deleteLast() {
 
 function calculate() {
   try {
-    display.value = eval(display.value);
+    let exp=display.value.replace(/%/g, '/100');
+    display.value = eval(exp);
   } catch {
     display.value = "Error";
   }
@@ -60,5 +61,6 @@ document.addEventListener("keydown", function (event) {
     clearDisplay();
   }
 });
+
 
 
