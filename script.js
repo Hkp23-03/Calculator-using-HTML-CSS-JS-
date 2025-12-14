@@ -41,6 +41,7 @@ function calculate() {
 
 
 document.addEventListener("keydown", function (event) {
+   event.preventDefault();
   let key = event.key;
 
   if ((key >= '0' && key <= '9') || key === '.') {
@@ -59,4 +60,5 @@ document.addEventListener("keydown", function (event) {
     clearDisplay();
   }
 });
+
 
