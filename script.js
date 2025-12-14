@@ -59,3 +59,4 @@ document.addEventListener("keydown", function (event) {
     clearDisplay();
   }
 });
+
